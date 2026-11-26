@@ -1,0 +1,76 @@
+{
+  "title": "Corvette Sem Gasolina — Padrão Híbrido",
+  "source": "references/lipaogamer-carros-luxo/corvette_arc.mp4",
+  "transcript": "references/lipaogamer-carros-luxo/corvette_transcript.json",
+  "idioma": "pt",
+  "cam_height": 600,
+  "captions_y": 1110,
+  "crops": {
+    "small_cam": "crop=382:212:68:82,scale=1080:600,setsar=1",
+    "big_cam": "crop=770:428:136:156,scale=1080:600,setsar=1",
+    "game_center": "crop=884:1080:518:0,scale=1080:1320,setsar=1",
+    "game_pump": "crop=884:1080:462:0,scale=1080:1320,setsar=1",
+    "game_right": "crop=884:1080:960:0,scale=1080:1320,setsar=1"
+  },
+  "hook_banner": {
+    "text": "ELE ROUBOU UM CORVETTE *E FICOU SEM GASOLINA!*",
+    "duration": 3.88,
+    "top": 430
+  },
+  "segments": [
+    { "id": "seg00_cold_open",  "src_start": 212.00, "src_end": 215.90, "mode": "split", "suppress_captions": true },
+    { "id": "seg01_steal",      "src_start":   2.45, "src_end":  12.55, "mode": "split" },
+    { "id": "seg02_promise",    "src_start":  46.15, "src_end":  59.05, "mode": "split" },
+    { "id": "seg03_crash",      "src_start":  79.60, "src_end":  82.65, "mode": "split" },
+    { "id": "seg04_smoke",      "src_start":  97.30, "src_end": 102.50, "mode": "split" },
+    { "id": "seg05_posto_in",   "src_start": 130.60, "src_end": 139.85, "mode": "split", "game_crop": "game_pump" },
+    {
+      "id": "seg06_dissolve_bg",
+      "src_start": 139.85,
+      "src_end": 144.85,
+      "mode": "dissolve_special",
+      "bg_parts": [
+        { "src_start": 137.00, "duration": 3.15, "vf": "crop=608:1080:460:0,scale=1080:1920,setsar=1,format=yuv420p" },
+        { "src_start": 143.55, "duration": 1.30, "vf": "crop=608:1080:780:0,scale=1080:1920,setpts=1.423*PTS,setsar=1,format=yuv420p" }
+      ],
+      "face_overlay": {
+        "src_start": 140.80,
+        "src_duration": 1.50,
+        "vf": "crop=770:510:136:146,scale=1080:716,pad=1080:1920:0:260:color=black,setpts=3.33*PTS,setsar=1,format=yuv420p"
+      }
+    },
+    { "id": "seg07_posto_out",  "src_start": 144.95, "src_end": 148.35, "mode": "split", "game_crop": "game_pump" },
+    {
+      "id": "seg08_idea",
+      "src_start": 154.55,
+      "src_end": 162.70,
+      "mode": "bigcam_punch",
+      "punch_start": 157.75,
+      "punch_end": 159.45,
+      "punch_cam_crop": "big_cam",
+      "punch_game_crop": "game_right"
+    },
+    { "id": "seg09_robbery",    "src_start": 174.75, "src_end": 179.95, "mode": "split" },
+    { "id": "seg10_got_cash",   "src_start": 187.70, "src_end": 189.70, "mode": "split" },
+    { "id": "seg11_finale",     "src_start": 211.95, "src_end": 226.35, "mode": "split" }
+  ],
+  "overlays": {
+    "rewind_badge":  { "start":  3.90, "duration": 1.85, "label": "VOLTANDO NO TEMPO" },
+    "promise_goal":  { "start": 14.35, "duration": 3.25, "kicker": "OBJETIVO:", "label": "TUNAR O CORVETTE!" },
+    "hud_callout":   { "start": 39.80, "duration": 4.50, "crop_at_sec": 137.00, "crop_filter": "crop=250:125:1670:60,scale=420:-1", "top_label": "GASOLINA: $48", "bottom_label": "FALTA $5 NO BOLSO!" },
+    "joke_dissolve": { "start": 44.50, "duration": 5.00, "label": "*FALTAVAM $5 NO BOLSO*" },
+    "abrupt_ending": { "start": 82.70, "duration": 1.35, "freeze_at_sec": 226.20, "word": "sem gasosa" }
+  },
+  "audio": [
+    { "id": "sfx-bass-open",   "src": "impact_bass.mp3",    "start":  0.00, "duration":  1.80, "volume": 0.36, "track": 4 },
+    { "id": "sfx-rewind",      "src": "record_scratch.mp3", "start":  3.88, "duration":  0.65, "volume": 0.52, "track": 4 },
+    { "id": "sfx-promise-pop", "src": "pop.mp3",            "start": 14.38, "duration":  0.60, "volume": 0.46, "track": 4 },
+    { "id": "sfx-police",      "src": "police_siren.mp3",   "start": 21.45, "duration":  2.10, "volume": 0.16, "track": 4 },
+    { "id": "sfx-hud-error",   "src": "error.mp3",          "start": 40.00, "duration":  1.60, "volume": 0.30, "track": 4 },
+    { "id": "sfx-sad-fail",    "src": "sad_trombone.mp3",   "start": 44.65, "duration":  2.60, "volume": 0.22, "track": 4 },
+    { "id": "sfx-cash",        "src": "cash_register.mp3",  "start": 62.20, "duration":  0.75, "volume": 0.44, "track": 4 },
+    { "id": "sfx-wasted",      "src": "wasted_boom.mp3",    "start": 82.70, "duration":  1.35, "volume": 0.68, "track": 4 },
+    { "id": "bgm-chase",       "src": "chase_loop.mp3",     "start": 14.00, "duration": 26.00, "volume": 0.09, "track": 6, "fade_in": 0.5, "fade_out": 1.2 },
+    { "id": "bgm-run",         "src": "chase_loop.mp3",     "start": 52.90, "duration": 28.20, "volume": 0.09, "track": 6, "fade_in": 0.4, "fade_out": 0.8 }
+  ]
+}

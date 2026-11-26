@@ -1,0 +1,29 @@
+# Ambientes Python e caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node / HyperFrames
+node_modules/
+.hyperframes/
+
+# Pastas de trabalho, edicoes e saidas
+edicao/
+cortes/
+video-agent/
+_tmp*/
+*.tmp
+*.log
+
+# Videos e audios temporarios de entrada/saida (NAO ignorar assets/sfx/*.wav ou *.mp3)
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.m4a
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
